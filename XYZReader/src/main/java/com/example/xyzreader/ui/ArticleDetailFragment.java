@@ -234,7 +234,6 @@ public class ArticleDetailFragment extends Fragment implements
 
             }
 
-            //bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />")));
             bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY)
                     .substring(0,MAX_ARTICLE_LENGTH).replaceAll("(\r\n|\n)", "<br />")));
 
